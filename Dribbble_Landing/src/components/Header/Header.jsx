@@ -5,7 +5,7 @@ import { MainButton } from "../MainButton/MainButton.jsx"
 
 export function Header(){
     return(
-        <header>
+        <header style={{display:"flex", alignItems:"center", width:"100%", justifyContent:"space-between", padding:"0 40px", height:"100px"}}>
             <div>
                <PageLink title="Find talent"/>
                <PageLink title="Inspiration"/>
