@@ -1,23 +1,29 @@
-import React from "react"
+import './Header.css'
 import { PageLink } from "../PageLink/PageLink.jsx"
+import { Logo } from "../Logo/Logo.jsx"
 import { Input } from "../Input/Input.jsx"
 import { MainButton } from "../MainButton/MainButton.jsx"
 
 export function Header(){
     return(
-        <header style={{display:"flex", alignItems:"center", width:"100%", justifyContent:"space-between", padding:"0 40px", height:"100px"}}>
+        <header>
+            <nav className="nav-menu">
+                <ul>
+                    <li><PageLink title="Find talent"/></li>
+                    <li><PageLink title="Inspiration"/></li>
+                    <li><PageLink title="Learn design"/></li>
+                    <li><PageLink title="Jobs"/></li>
+                    <li><PageLink title="Go Pro"/></li>
+                </ul>
+            </nav>
             <div>
-               <PageLink title="Find talent"/>
-               <PageLink title="Inspiration"/>
-               <PageLink title="Learn design"/>
-               <PageLink title="Jobs"/>
-               <PageLink title="Go Pro"/>
+                <Logo/>
             </div>
             <div>
-                <Input title="Search"/>
-                <PageLink title="Log in"/>
-                <MainButton title="Sign Up" txtColor="white" bgColor="#0d0c22"/>
+                <MainButton title="Sign Up" txtColor="white" bgColor="#0d0c22" btnBorder="none"/>
             </div>
-        </header>
+        </header>        
     )
 }
+
+console.log("It works!")

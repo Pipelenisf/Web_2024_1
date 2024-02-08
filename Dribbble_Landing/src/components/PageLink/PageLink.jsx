@@ -1,5 +1,3 @@
-import React from "react";
-
 export function PageLink(props){
     const {title} = props
 
