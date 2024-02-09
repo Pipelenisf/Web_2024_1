@@ -5,6 +5,7 @@ import { NavMenu } from '../NavMenu/NavMenu.jsx'
 import { MainButton } from "../MainButton/MainButton.jsx"
 import { Input } from "../Input/Input.jsx"
 
+//Header component
 export function Header(){
     return(
         <header>      
