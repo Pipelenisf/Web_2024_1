@@ -3,19 +3,10 @@ import { PageLink } from "../PageLink/PageLink.jsx"
 import { Logo } from "../Logo/Logo.jsx"
 import { Input } from "../Input/Input.jsx"
 import { MainButton } from "../MainButton/MainButton.jsx"
-
+ 
 export function Header(){
     return(
         <header>
-            <nav className="nav-menu">
-                <ul>
-                    <li><PageLink title="Find talent"/></li>
-                    <li><PageLink title="Inspiration"/></li>
-                    <li><PageLink title="Learn design"/></li>
-                    <li><PageLink title="Jobs"/></li>
-                    <li><PageLink title="Go Pro"/></li>
-                </ul>
-            </nav>
             <div>
                 <Logo/>
             </div>
