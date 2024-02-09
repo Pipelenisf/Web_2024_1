@@ -1,0 +1,7 @@
+.tag-button{
+    width: fit-content;
+    height: fit-content;
+    padding: 2px 9px;
+    border: 1px solid red;
+    background-color: transparent;
+}
