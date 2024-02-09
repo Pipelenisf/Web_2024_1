@@ -8,8 +8,10 @@ header{
 }
 
 .nav-menu{
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0;
 }
 
 @media (min-width: 375px){

@@ -16,7 +16,7 @@ export function NavMenu(){
                     </div>
                 <li><PageLink title="Jobs"/></li>
                 <li><PageLink title="Go Pro"/></li>
-                <li><PageLink className="log-link" title="Log in"/></li>
+                <li className="log-link"><PageLink title="Log in"/></li>
             </ul>
         </nav>)
 }

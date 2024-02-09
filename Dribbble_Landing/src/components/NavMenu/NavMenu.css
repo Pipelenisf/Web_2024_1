@@ -15,6 +15,7 @@ li{
 }
 
 nav{
+    width: 100%;
     border-top: 1px solid #e7e7e9;
     padding: 32px;
 }
