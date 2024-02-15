@@ -10,13 +10,15 @@ function ProductCard(){
 
                 </div>
                 <div className='product-detail'>
-                    <div className='likes-cont'>
+                    {// ToDo: Create as component
+                    }
+                    <div className='likes-count'>
                         <svg>
                             <path></path>
                         </svg>
                         <p>27</p>
                     </div>
-                    <div className='views-cont'>
+                    <div className='views-count'>
                         <svg>
                             <path></path>
                         </svg>

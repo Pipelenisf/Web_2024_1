@@ -6,7 +6,7 @@ export function UserCard(props){
     const {bgImage} = props
     return(
         <>
-            <div className="user-card-container" style={{ backgroundImage: ""}}>
+            <div className="user-card-container" style={{ backgroundImage: 'url(https://cdn.dribbble.com/uploads/47175/original/1fb34610061a95a007ac5e7b1dc53138.jpeg?1685645183&format=webp&resize=320x399&vertical=center)'}}>
                 {// ? How to use image as background image?
                 }
                 <div className='user-data'>
