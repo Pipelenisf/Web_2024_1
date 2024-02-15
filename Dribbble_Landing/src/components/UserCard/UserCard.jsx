@@ -6,10 +6,9 @@ export function UserCard(props){
     const {bgImage} = props
     return(
         <>
-            <div className="user-card-container" style={{background: img1}}>
+            <div className="user-card-container" style={{ backgroundImage: ""}}>
                 {// ? How to use image as background image?
                 }
-                <img src={img1} alt="" /> 
                 <div className='user-data'>
                     <p>Jesse Showalter</p>
                     <p>Design Director</p>
