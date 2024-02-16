@@ -10,9 +10,11 @@ export function UserCard(props){
                 {// ? How to use image as background image?
                 }
                 <div className='user-data'>
-                    <p>Jesse Showalter</p>
-                    <p>Design Director</p>
-                    <div>
+                    <div className='user-data-cont'>
+                        <p>Jesse Showalter</p>
+                        <p>Design Director</p> 
+                    </div>
+                    <div className='tags-cont'>
                         <Tag text='Ilustration'/>
                         <Tag text='Mobile'/>
                         <Tag text='UI'/>
