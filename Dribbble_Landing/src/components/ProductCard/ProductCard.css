@@ -1,0 +1,23 @@
+.product-card-cont{
+    width: fit-content;
+    margin: 0 20px;
+}
+
+.product-thumbnail{
+    background-image: url(https://cdn.dribbble.com/userupload/13006921/file/original-5629232….png?resize=1200x900);
+    background-size: cover;
+    width: 335.2px;
+    height: 251.4px;
+    border-radius: 10px;
+}
+
+.product-data{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+
+.product-detail{
+    display: flex;
+    flex-direction: row;
+}
