@@ -9,6 +9,7 @@ import { Tag } from "./components/Tag/Tag.jsx"
 import { UserCard } from "./components/UserCard/UserCard.jsx"
 import { ProductCard } from "./components/ProductCard/ProductCard.jsx"
 import { CategoryCard } from "./components/CategoryCard/CategoryCard.jsx"
+import { Footer } from "./components/Footer/Footer.jsx"
 
 export function App(){
     return(
@@ -23,6 +24,7 @@ export function App(){
       <UserCard bgimage='https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg'/>
       <ProductCard bgProductImg='https://cdn.dribbble.com/userupload/13006921/file/original-562923298283ee2a026cb7fc94ab0396.png?resize=1200x900'/>
       <CategoryCard text='Typefaces'/>
+      <Footer/>
       </>
     )
   }
