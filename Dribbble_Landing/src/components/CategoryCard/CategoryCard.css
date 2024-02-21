@@ -1,3 +1,9 @@
+.footer-section{
+    display: flex;
+    height: 365px;
+    margin: auto 24px;
+}
+
 .category-thumbnail{
     width: 200px;
     height: 150px;
@@ -9,4 +15,16 @@
 .category-title{
     font-size: 14px;
     margin: 12px 0 0 ;
+}
+
+.social-media-container{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 16px;
+}
+
+.icon{
+    width: 18px;
+    height: 18px;
+    background-color: black;
 }
