@@ -3,6 +3,10 @@
     margin: 0 20px;
 }
 
+.product-card{
+    margin-bottom: 10px;
+}
+
 .product-thumbnail{
     background-image: url(https://cdn.dribbble.com/userupload/13006921/file/original-5629232….png?resize=1200x900);
     background-size: cover;
@@ -20,4 +24,8 @@
 .product-detail{
     display: flex;
     flex-direction: row;
+}
+
+.random{
+    margin-bottom: 10px;
 }
