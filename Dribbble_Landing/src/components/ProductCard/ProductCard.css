@@ -1,5 +1,8 @@
 .product-card-cont{
-    width: fit-content;
+    display: grid;
+    grid-gap: 36px;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    max-width: 100vw;
     margin: 0 20px;
 }
 
@@ -10,7 +13,7 @@
 .product-thumbnail{
     background-image: url(https://cdn.dribbble.com/userupload/13006921/file/original-5629232….png?resize=1200x900);
     background-size: cover;
-    width: 335.2px;
+    background-position: center;
     height: 251.4px;
     border-radius: 10px;
 }
