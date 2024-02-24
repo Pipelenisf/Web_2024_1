@@ -1,3 +1,15 @@
+.user-cards-cont{
+    margin: 30px 0;
+    padding: 0 20px;
+    display: grid;
+    grid-auto-columns: min-content;
+    grid-auto-flow: column;
+    grid-gap: 24px;
+    overflow: hidden;
+    overflow-x: scroll;
+    padding: 0 20px;
+}
+
 .user-card-container{
     background-size: contain;
     border-radius: 20px;
