@@ -18,19 +18,21 @@ export function Header(){
     return(
 
         <header>
-            
-            {// ToDo: Overflow hidden doesn't work
-            }
-                <img onClick={handleClick} width="24" height="24" src="https://img.icons8.com/material-rounded/24/menu--v3.png" alt="menu--v3"/>               
-                <Logo/>
-                {
-                    showNav
-                    ? (<div className="nav-menu" style={{display:'block'}}>
-                            <NavMenu/>
-                        </div>)
-                    : null
+            <div>
+                {// ToDo: Overflow hidden doesn't work
                 }
-                <MainButton title="Sign Up" txtColor="white" bgColor="#0d0c22" btnBorder="none"/>
+                    <img onClick={handleClick} width="24" height="24" src="https://img.icons8.com/material-rounded/24/menu--v3.png" alt="menu--v3"/>               
+                    <Logo/>
+                    {
+                        showNav
+                        ? (<div className="nav-menu" style={{display:'block'}}>
+                                <NavMenu/>
+                            </div>)
+                        : null
+                    }
+            </div>
+
+            <MainButton title="Sign Up" txtColor="white" bgColor="#0d0c22" btnBorder="none"/>
         </header>        
     )
 }
