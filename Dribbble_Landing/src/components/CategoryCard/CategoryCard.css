@@ -43,4 +43,8 @@
     .category-cont{
         margin: 0 72px;
     }
+
+    .category-cont::-webkit-scrollbar {
+        display: none;
+      }
 }
