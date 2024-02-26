@@ -10,6 +10,6 @@ export function MainTitle(props){
 export function MediumTitle(props){
     const {title, color} = props
     return(
-        <h1 className="medium-title">{title}</h1>
+        <h2 className="medium-title">{title}</h2>
     )
 }

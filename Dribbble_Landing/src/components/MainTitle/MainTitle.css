@@ -1,7 +1,9 @@
 .large-title{
-    font-size: large;
+    font-size: 72px;
 }
 
 .medium-title{
-    font-size: xx-large;
+    font-size: 35px;
+    font-weight: 400;
+    padding: 40px 0 25px;
 }
