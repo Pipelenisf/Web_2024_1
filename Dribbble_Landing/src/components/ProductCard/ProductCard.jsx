@@ -4,12 +4,13 @@ import { PRODUCT } from '../../const/ProductData'
 
 import { ProductDetail } from '../ProductDetail/ProductDetail'
 import { UserProfile } from '../UserProfile/UserProfile'
-
+import { MediumTitle } from '../MainTitle/MainTitle'
 
 export function ProductCard(props){
 
     return(
         <div className='product-card-cont'>
+            <MediumTitle title='Explore inspiring designs' />
         {
             PRODUCT.map(product => {
                 return(
