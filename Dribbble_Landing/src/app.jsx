@@ -2,7 +2,6 @@ import React from "react"
 
 import { Header } from "./components/Header/Header.jsx"
 import { Badge } from "./components/Badge/Badge.jsx"
-import { MainTitle } from "./components/LargeTitle/MainTitle.jsx"
 import { BodyContainer } from "./components/BodyContainer/BodyContainer.jsx"
 import { MainButton } from "./components/MainButton/MainButton.jsx"
 import { Tag } from "./components/Tag/Tag.jsx"

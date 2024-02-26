@@ -40,5 +40,11 @@ p{
 
 .tags-cont{
     display: flex;
-    justify-content: space-between;
+}
+
+@media (min-width:1080px) {
+    .user-card-container{
+        width: 273px;
+        height: 340px;
+    }
 }

@@ -38,3 +38,9 @@
     height: 18px;
     background-color: black;
 }
+
+@media (min-width:1080px) {
+    .category-cont{
+        margin: 0 72px;
+    }
+}

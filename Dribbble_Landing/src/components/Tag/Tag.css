@@ -1,8 +1,16 @@
 .tag-button{
+    font-size: 11px;
     color: white;
     width: fit-content;
     height: fit-content;
-    padding: 2px 9px;
+    padding: 2px 9px !important;
+    margin: 0 8px 0 0;
     border: 0.5px solid white;
     background-color: transparent;
+}
+
+@media (min-width:1080px) {
+    .tag-button{
+        padding: 4px 11px !important;
+    }
 }
