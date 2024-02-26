@@ -15,11 +15,6 @@ export function App(){
     return(
       <>
       <Header/>
-      <Badge bgColor="#ffda79"text="Over 3 million ready-to-work creatives!"/>
-      <MainTitle text='The world’s destination for design'/>
-      <BodyContainer text='Get inspired by the work of millions of top-rated designers & agencies around the world.'/>
-      <MainButton title='Get Started' bgColor='#0d0c22' txtColor='white'/>
-      <UserCard bgimage='https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg'/>
       <Body/>
       <CategoryCard text='Typefaces'/>
       <Footer/>

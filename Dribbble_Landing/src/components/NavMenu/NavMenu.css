@@ -35,3 +35,32 @@ nav{
     border-left: 1px solid #e7e7e9 ;
 }
 /* em and rem to relative*/
+
+
+@media (min-width: 375px) {
+
+}
+
+@media (min-width: 1024px) {
+    ul{
+        display: flex;
+    }
+
+    li{
+        padding: 12px 20px;
+        display: flex;
+        width: fit-content;
+    }
+
+    nav{
+        background-color: transparent;
+    }
+
+    .sub-nav-links{
+        display: none;
+    }
+
+    .log-link{
+        display: none;
+    }
+}

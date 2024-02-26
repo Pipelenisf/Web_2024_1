@@ -5,7 +5,6 @@ header{
     justify-content: space-between;
     padding: 0 20px;
     height: 100px;
-    display: ;
 }
 
 .nav-menu{
@@ -24,5 +23,13 @@ header{
 }
 
 @media (min-width: 1024px){
+    .nav-menu{
+        display: block !important;
+        background-color: transparent;
+    }
+
+    .hamburguer-button{
+        display: none;
+    }
     
 }

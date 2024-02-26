@@ -9,7 +9,6 @@ import { Input } from "../Input/Input.jsx"
 //Header component
 export function Header(){
     const [showNav, setShowNav] = useState(false)
-    console.log('nav value:', showNav)
 
     const handleClick = (event) =>{
         setShowNav(!showNav)
@@ -21,7 +20,7 @@ export function Header(){
             <div>
                 {// ToDo: Overflow hidden doesn't work
                 }
-                    <img onClick={handleClick} width="24" height="24" src="https://img.icons8.com/material-rounded/24/menu--v3.png" alt="menu--v3"/>               
+                    <img className='hamburguer-button' onClick={handleClick} width="24" height="24" src="https://img.icons8.com/material-rounded/24/menu--v3.png" alt="menu--v3"/>               
                     <Logo/>
                     {
                         showNav
