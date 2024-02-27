@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, { useState } from "react"
 import { Button } from "./components/Button/Button"
 
 export function App() {
@@ -6,15 +6,16 @@ export function App() {
   const [value, setValue] = useState(0)
 
   const addValue = () => {
-    console.log('Suma:', value)
     setValue(value + 1)
   }
 
   const substractValue = () => {
-    setValue(value - 1)
+    (value > 0) 
+    ? setValue(value - 1)
+    : null
   }
 
-  return(
+  return (
     <>
       <p>{value}</p>
       <div>
