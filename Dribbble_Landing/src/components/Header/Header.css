@@ -16,6 +16,9 @@ header{
     left: 0;
 }
 
+.hamburguer-button:hover{
+    cursor: pointer;
+}
 
 @media (min-width: 375px){
     nav{
