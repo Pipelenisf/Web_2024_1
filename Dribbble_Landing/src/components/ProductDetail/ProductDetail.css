@@ -1,9 +1,11 @@
 .detail-cont{
     display: flex;
     align-items: center;
-}
+    margin-left: 10px;
+}git 
 
 .vector{
     width: 15px;
     height: 15px;
+    margin-right: 5px;
 }

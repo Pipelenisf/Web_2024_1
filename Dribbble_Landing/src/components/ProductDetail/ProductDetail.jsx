@@ -13,7 +13,7 @@ export function ProductDetail(props){
             </svg> 
             {// Todo: How to resize svg
             }
-            <p>{text}</p>
+            <p className='product-detail-text'>{text}</p>
         </div>
     )
 }
