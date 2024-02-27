@@ -1,4 +1,33 @@
+p{
+    color: #6D56A1;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.buttons-cont{
+    display: flex;
+    flex-direction: row;
+}
+
 button{
     width: 60px;
     height: 60px;
+    color: #6D56A1;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 6px solid #6D56A1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.substract-button{
+    background-color: #FA95F5 
+    ;
+}
+
+.add-button{
+    background-color: #F3F963;
 }
