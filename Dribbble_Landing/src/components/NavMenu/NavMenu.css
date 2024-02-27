@@ -38,10 +38,12 @@ nav{
 
 
 @media (min-width: 375px) {
-
+    nav{
+        width: auto;
+    }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
     ul{
         display: flex;
     }
@@ -50,10 +52,6 @@ nav{
         padding: 12px 20px;
         display: flex;
         width: fit-content;
-    }
-
-    nav{
-        background-color: transparent;
     }
 
     .sub-nav-links{

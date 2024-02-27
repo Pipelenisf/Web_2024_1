@@ -91,3 +91,11 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.hide-overflow{
+  overflow-y: hidden;
+}
+
+.show-overflow{
+    overflow-y: visible;
+}

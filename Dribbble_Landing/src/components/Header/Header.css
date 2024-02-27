@@ -16,16 +16,27 @@ header{
     left: 0;
 }
 
+
 @media (min-width: 375px){
+    nav{
+        width: auto;
+    }
+
     .nav-menu{
         flex-direction: row;
     }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1080px){
+
     .nav-menu{
         display: block !important;
         background-color: transparent;
+        height: auto;
+        width: auto;
+        position: relative;
+        top: unset;
+        left: unset;
     }
 
     .hamburguer-button{

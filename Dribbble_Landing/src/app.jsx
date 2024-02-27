@@ -11,6 +11,7 @@ import { Footer } from "./components/Footer/Footer.jsx"
 import { Body } from "./components/Body/Body.jsx"
 
 export function App(){
+
     return(
       <>
       <Header/>
