@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './Body.css'
+import { Header } from "../Header/Header";
 
 export function Body(){
     const [value, setValue] = useState(0);
@@ -32,6 +33,7 @@ export function Body(){
 
   return (
     <>
+    <Header/>
       <p>{value}</p>
       {
         showGif 
