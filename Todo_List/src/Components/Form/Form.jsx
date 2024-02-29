@@ -3,8 +3,8 @@ import './Form.css'
 export function Form(){
     return(
         <form>
-            <input type="label">
-            </input>
+            <input type="text" placeholder='Escribe tu tarea'/>
+                
             
             <Button/>
         </form>
