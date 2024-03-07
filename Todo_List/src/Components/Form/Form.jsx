@@ -2,13 +2,17 @@ import './Form.css'
 
 export function Form(){
     return(
-        <form>
-            <div className='add-container'>
-                <input type="text" placeholder='Escribe tu tarea'/>
-                <Button/>
-            </div>
-            <TaskCard name='Task 1' bgColor='#FF8A09'/>
-        </form>
+        <>
+            <h2>Manage your task</h2>
+            <form>
+                <div className='add-container'>
+                    <input type="text" placeholder='Escribe tu tarea'/>
+                    <Button/>
+                </div>
+                <TaskCard name='Task 1' bgColor='#FF8A09'/>
+            </form>
+        </>
+
     )
 }
 
