@@ -1,6 +1,8 @@
 import './Form.css'
 
 export function Form(){
+
+
     return(
         <>
             <h2>Manage your task</h2>
@@ -17,8 +19,16 @@ export function Form(){
 }
 
 export function Button(){
+
+    const addTask = (event) => {
+        {//
+        }
+        event.preventDefault()
+        console.log("Hola")
+      }
+
     return(
-        <button>+</button>
+        <button onClick={addTask}>+</button>
     )
 }
 
