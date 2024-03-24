@@ -59,3 +59,7 @@ button{
     height: 30px;
     border-radius: 20px;
 }
+
+.task-checkbox{
+    width: 30px;
+}
