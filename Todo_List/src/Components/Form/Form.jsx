@@ -85,6 +85,7 @@ export function Form() {
   const [taskName, setTaskName] = useState("");
   const [tasks, dispatch] = useReducer(taskReducer, []);
   const [filter, setFilter] = useState("all");
+  const [isInputEmpty, setIsInputEmpty] = useState(true);
 
   useEffect(() => {
     const storedTasks = JSON.parse(localStorage.getItem("tasks"));
@@ -98,7 +99,9 @@ export function Form() {
   }, [tasks]);
 
   const handleInputChange = (event) => {
-    setTaskName(event.target.value);
+    const inputValue = event.target.value;
+    setTaskName(inputValue);
+    setIsInputEmpty(inputValue === "");
   };
 
   const addTask = (event) => {
@@ -106,6 +109,7 @@ export function Form() {
     if (taskName.trim() !== "") {
       dispatch({ type: "ADD_TASK", payload: taskName });
       setTaskName("");
+      setIsInputEmpty(true);
     }
   };
 
@@ -114,7 +118,7 @@ export function Form() {
   };
 
   const deleteTask = (index) => {
-    if (window.confirm("¿Estás seguro de que deseas eliminar esta tarea?")) {
+    if (window.confirm("Are you sure you want to eliminate this task?")) {
       dispatch({ type: "DELETE_TASK", payload: index });
     }
   };
@@ -124,13 +128,13 @@ export function Form() {
     if (tasks.some((task) => task.completed)) {
       if (
         window.confirm(
-          "¿Estás seguro de que deseas eliminar todas las tareas completadas?"
+          "¿Are you sure you want to delete all completed tasks?"
         )
       ) {
         dispatch({ type: "DELETE_COMPLETED_TASKS" });
       }
     } else {
-      alert("No hay tareas completadas para eliminar.");
+      alert("There are no completed tasks to delete.");
     }
   };
 
@@ -149,7 +153,13 @@ export function Form() {
             value={taskName}
             onChange={handleInputChange}
           />
-          <Button addTask={addTask} />
+          <button
+            className={`add-button ${isInputEmpty ? 'inactive' : 'active'}`}
+            onClick={addTask}
+            disabled={isInputEmpty}
+          >
+            +
+          </button>
         </div>
         {tasks
           .filter((task) => {
@@ -162,18 +172,33 @@ export function Form() {
             }
           })
           .map((task, index) => (
-            <TaskCard
+            <div
               key={index}
-              name={task.name}
-              completed={task.completed}
-              toggleTaskCompleted={() => toggleTaskCompleted(index)}
-              deleteTask={() => deleteTask(index)}
-            />
+              className={`task-card-container ${task.completed ? "completed" : ""}`}
+            >
+              <label className="checkbox-label">
+                <input
+                  type="checkbox"
+                  className="task-checkbox"
+                  checked={task.completed}
+                  onChange={() => toggleTaskCompleted(index)}
+                />
+                <span className="checkmark"></span>
+              </label>
+              <span className="task-name">{task.name}</span>
+              <button className="button-delete" onClick={() => deleteTask(index)}>
+                Delete Task
+              </button>
+            </div>
           ))}
         <div className="line"></div>
         <div className="filter-conunter">
-          <Counter count={countPendingTasks()} />
-          <FilterButtons setFilter={setFilter} />
+          <p>{countPendingTasks()} item(s) left</p>
+          <div className="filter-button">
+            <button onClick={(event) => setFilter("all")}>All</button>
+            <button onClick={(event) => setFilter("completed")}>Completed</button>
+            <button onClick={(event) => setFilter("pending")}>Pending</button>
+          </div>
           <button className="ckecked-botton" onClick={deleteCompletedTasks}>
             Delete checked
           </button>
@@ -182,73 +207,3 @@ export function Form() {
     </>
   );
 }
-
-export function Button(props) {
-  const { addTask } = props;
-
-  return <button onClick={addTask}>+</button>;
-}
-
-// Form.js
-export function TaskCard(props) {
-  const { name, completed, toggleTaskCompleted, deleteTask } = props;
-
-  return (
-    <div className={`task-card-container ${completed ? "completed" : ""}`}>
-      <label className="checkbox-label">
-        <input
-          type="checkbox"
-          className="task-checkbox"
-          checked={completed}
-          onChange={toggleTaskCompleted}
-        />
-        <span className="checkmark"></span>
-      </label>
-      <span className="task-name">{name}</span>
-      <button className="button-delete" onClick={deleteTask}>
-        Delete Task
-      </button>
-    </div>
-  );
-}
-
-function Counter({ count }) {
-  return <p>{count} item(s) left</p>;
-}
-
-function FilterButtons({ setFilter }) {
-  const handleFilterClick = (event, filter) => {
-    event.preventDefault();
-    setFilter(filter);
-  };
-
-  return (
-    <div className="filter-button">
-      <button onClick={(event) => handleFilterClick(event, "all")}>All</button>
-      <button onClick={(event) => handleFilterClick(event, "completed")}>
-        Completed
-      </button>
-      <button onClick={(event) => handleFilterClick(event, "pending")}>
-        Pending
-      </button>
-    </div>
-  );
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
